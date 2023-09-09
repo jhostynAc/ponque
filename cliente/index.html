@@ -6,69 +6,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/style.css">
-    <script src="https://kit.fontawesome.com/73d62dd04a.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="./img/descarga (3) (1) (1).png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <title>Tamalvarez</title>
 </head>
 
 <body>
-    <nav>
-        <img src="./img/descarga (3) (1) (1).png" alt="">
-        <ul>
-            <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
-            <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
-        </ul>
-        <input type="checkbox">
-        <section class="cont-menu">
-            <li>
-                <a href="">Nosotros</a>
-                <a href="">Galeria y historia</a>
-                <a href="">productos</a>
-            </li>
-        </section>
-    </nav>
-    <div class="cuadro-exotic">
-        <div class="cuadro">
-            <img src="./img/descarga (3) (1) (1).png" alt="">
-        </div>
-        <div class="texto">
-            <h2>Más de 14 años de experiencia en cocina tradicional colombiana.</h2>
-            <p>
-                Somos una microempresa familiar con 14 años de experiencia en la cocina
-                antioqueña, siempre enfocándonos en la producción con estándares de calidad
-                e innovación, entregando al cliente el producto en su mejor presentación y sabor.
-            </p>    
-        </div>
-    </div>
-    <div class="caudros">
-        <div class="info">
-            <div class="imagen">
-                <img src="./img/descarga (3) (1) (1).png" alt="">
+    <div class="caja1">
+        <nav>
+            <div class="button">
+                <img src="./img/descarga__3___1_-removebg-preview.png" alt="">
+                <li><a href="">hola</a></li>
+                <li><a href="">hola</a></li>
+                <li><a href="">hola</a></li>
+                <li><a href="">hola</a></li>
             </div>
-            <p>imagen 1</p>
-        </div>
-        <div class="info">
-            <div class="imagen">
-                <img src="./img/descarga (3) (1) (1).png" alt="">
+            <div class="shop">
+                <a href=""><img src="https://img.icons8.com/ios/40/FFFFFF/shopping-bag--v1.png" alt=""></a>
+                <p>0</p>
             </div>
-            <p>imagen 2</p>
-        </div>
-        <div class="info">
-            <div class="imagen">
-                <img src="./img/descarga (3) (1) (1).png" alt="">
-            </div>
-            <p>imagen 3</p>
-        </div>
+        </nav>
+        <h2>Más de 14 años de experiencia <br> en cocina tradicional colombiana.</h2>
+        <p>
+            Somos una microempresa familiar con 14 años de experiencia en la cocina
+            antioqueña, <br> siempre enfocándonos en la producción con estándares de calidad
+            e innovación, <br> entregando al cliente el producto en su mejor presentación y sabor.
+        </p>
     </div>
-    <div class="cuadros_2">
-        <div class="contenidos">
-            <img src="./img/descarga (3) (1) (1).png" alt="">
-            <h5>Calidad garantizada</h5>
-        </div>
-        <div class="contenidos">
-            <img src="./img/descarga (3) (1) (1).png" alt="">
-            <h5>Calidad garantizada</h5>
-        </div>
+    <div class="caja2">
+        <h2>GALERIA E HISTORIA</h2>
     </div>
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./img/bunuelos-1628.gif" alt=""></div>
+            <div class="swiper-slide"><img src="./img/descarga (3) (1) (1).png" alt=""></div>
+            <div class="swiper-slide"><img src="./img/fiambre.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./img/palitodequeso.jpg" alt=""></div>
+            <div class="swiper-slide">Slide 5</div>
+            <div class="swiper-slide">Slide 6</div>
+            <div class="swiper-slide">Slide 7</div>
+            <div class="swiper-slide">Slide 8</div>
+            <div class="swiper-slide">Slide 9</div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 4,
+            centeredSlides: true,
+            spaceBetween: 30,
+            grabCursor: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
 </body>
 <footer>
     <div class="exotic">
